@@ -65,6 +65,20 @@ markdown_extensions:
       toc_depth: 3
 
 extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # TODO: 替换为你的 GA4 测量 ID
+    feedback:
+      title: 这个页面帮到你了吗？
+      ratings:
+        - icon: material/thumb-up-outline
+          name: 很有帮助
+          data: 1
+          note: 感谢反馈！
+        - icon: material/thumb-down-outline
+          name: 没有帮助
+          data: 0
+          note: 抱歉，我们会改进。
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wikieden
