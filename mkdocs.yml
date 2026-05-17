@@ -1,0 +1,140 @@
+site_name: "具身大脑 Wiki"
+site_description: "Embodied Brain — 从反射型机器人到智能体的全景知识库"
+site_author: "wikieden"
+site_url: https://wikieden.github.io/embodied-brain-wiki
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: [zh, en]
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wikieden
+  generator: false
+
+copyright: "© 2026 wikieden | 具身大脑知识库"
+
+nav:
+  - 首页: index.md
+  - 具身大脑:
+    - concepts/embodied-brain.md
+    - 子方向:
+      - concepts/memory.md
+      - concepts/cognition.md
+      - concepts/consciousness.md
+      - concepts/emotion-and-motivation.md
+      - concepts/lifelong-learning.md
+    - 横向分析:
+      - comparisons/embodied-brain-framework-comparison.md
+      - concepts/embodied-brain-evaluation.md
+      - concepts/embodied-brain-ethics.md
+    - 战略视图:
+      - concepts/embodied-brain-roadmap.md
+  - 具身智能全景:
+    - concepts/embodied-ai-research-landscape.md
+    - concepts/robotics-technical-factions.md
+    - concepts/end-to-end-robotics.md
+    - concepts/data-flywheel-robotics.md
+    - concepts/embodied-benchmarks.md
+  - 技术方向:
+    - VLA 架构: concepts/vla-vision-language-action.md
+    - 世界模型: concepts/world-model-robotics.md
+    - 任务规划: concepts/task-planning-and-skill-composition.md
+    - 灵巧操作: concepts/dexterous-manipulation.md
+    - 模仿学习: concepts/imitation-learning-robotics.md
+    - 强化学习: concepts/reinforcement-learning-robotics.md
+    - Sim2Real: concepts/sim-to-real.md
+    - 跨本体: concepts/cross-embodiment.md
+    - 物理仿真: concepts/physics-simulators.md
+    - 可微分机器人学: concepts/differentiable-robotics.md
+    - 开源硬件: concepts/open-hardware-robotics.md
+    - 数据引擎: concepts/robotics-data-engines.md
+    - 流匹配: concepts/flow-matching.md
+  - 对比分析:
+    - comparisons/vla-architecture-comparison.md
+    - comparisons/task-planning-framework-comparison.md
+    - comparisons/data-strategy-comparison.md
+  - 公司/项目:
+    - 商业公司:
+      - entities/figure-ai.md
+      - entities/tesla-optimus.md
+      - entities/1x-technologies.md
+      - entities/boston-dynamics.md
+      - entities/google-deepmind.md
+      - entities/nvidia-isaac.md
+      - entities/physical-intelligence.md
+      - entities/agility-robotics.md
+      - entities/apptronik.md
+      - entities/unitree.md
+      - entities/enchanted-tools.md
+      - entities/genesis-ai.md
+    - 开源项目:
+      - entities/lerobot.md
+      - entities/genesis-world.md
+      - entities/aloha.md
+      - entities/umi.md
+      - entities/dexcap.md
+      - entities/open-television.md
+      - entities/robosuite.md
+      - entities/roboverse.md
+      - entities/robotwin.md
+      - entities/maniskill.md
+      - entities/metaworld.md
